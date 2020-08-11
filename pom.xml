@@ -5,7 +5,7 @@
 	
 	<groupId>space.arim.licenser</groupId>
 	<artifactId>licenser-parent</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.2.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<name>LicenseDistributor</name>
@@ -29,18 +29,19 @@
 	</build>
 	
 	<modules>
+		<module>lgpl3</module>
 		<module>gpl3</module>
 		<module>agpl3</module>
 	</modules>
 	
 	<distributionManagement>
 		<repository>
-			<id>arim-repo</id>
-			<url>https://maven.cloudsmith.io/anand-beh/arim-repo/</url>
+			<id>cloudsmith-deploy</id>
+			<url>https://maven.cloudsmith.io/anand-beh/lesser-gpl3/</url>
 		</repository>
 		<snapshotRepository>
-			<id>arim-repo</id>
-			<url>https://maven.cloudsmith.io/anand-beh/arim-repo/</url>
+			<id>cloudsmith-deploy</id>
+			<url>https://maven.cloudsmith.io/anand-beh/lesser-gpl3/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>

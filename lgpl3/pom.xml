@@ -9,6 +9,6 @@
 		<version>0.2.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>licenser-gpl3</artifactId>
-	<description>GPL 3 license distributor to be utilised by other projects through shading.</description>
+	<artifactId>licenser-lgpl3</artifactId>
+	<description>LGPL 3 license distributor to be utilised by other projects through shading.</description>
 </project>
