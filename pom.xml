@@ -2,18 +2,24 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
+	<parent>
+		<groupId>space.arim.parent</groupId>
+		<artifactId>common-parent</artifactId>
+		<version>0.2.0</version>
+	</parent>
+
 	<groupId>space.arim.licenser</groupId>
 	<artifactId>licenser-parent</artifactId>
-	<version>0.2.0</version>
+	<version>0.2.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
-	<name>LicenseDistributor</name>
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/A248/LicenseDistributor.git</developerConnection>
+	</scm>
 	
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>8</maven.compiler.source>
-		<maven.compiler.target>8</maven.compiler.target>
+		<maven.compiler.release>8</maven.compiler.release>
 	</properties>
 	
 	<build>
@@ -33,15 +39,11 @@
 		<module>gpl3</module>
 		<module>agpl3</module>
 	</modules>
-	
-	<distributionManagement>
+
+	<repositories>
 		<repository>
-			<id>cloudsmith-deploy</id>
-			<url>https://maven.cloudsmith.io/anand-beh/lesser-gpl3/</url>
+			<id>arim-mvn-lgpl3</id>
+			<url>https://mvn-repo.arim.space/lesser-gpl3/</url>
 		</repository>
-		<snapshotRepository>
-			<id>cloudsmith-deploy</id>
-			<url>https://maven.cloudsmith.io/anand-beh/lesser-gpl3/</url>
-		</snapshotRepository>
-	</distributionManagement>
+	</repositories>
 </project>
