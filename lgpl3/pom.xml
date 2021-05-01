@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>space.arim.licenser</groupId>
 		<artifactId>licenser-parent</artifactId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>0.2.0</version>
 	</parent>
 
 	<artifactId>licenser-lgpl3</artifactId>
